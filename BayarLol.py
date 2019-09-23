@@ -1,63 +1,28 @@
+#decompiled by zx
+import os, sys
+print '\x1b[1;32mSudah punya ID dan Password nya?'
+print '\x1b[1;32mSilahkan Login '
 import os, sys
 
-print ("\033[1;32mSilahkan Masukkan Username & Password Anda Ya Ngentod")
-
-print ("\033[1;32matau silahkan Hubungi zx wazaowsky ")
-
-username = 'marioXploit'      
-
-password = '*#*#*#*#*#'
-
+def wa():
+    os.system('xdg-open https://api.whatsapp.com/send?phone=6283865232904&text=woi zx aing hayang gabung')
 
 
 def restart():
-
-	ngulang = sys.executable
-
-	os.execl(ngulang, ngulang, *sys.argv)
+    ngulang = sys.executable
+    os.execl(ngulang, ngulang, *sys.argv)
 
 
-
-def main():
-
-	uname = raw_input("username : ")
-
-	if uname == username:
-
-		pwd = raw_input("password : ")
-
-
-
-		if pwd == password:
-
-			print "\033[1;32mMantul masuk juga lu ngentod..", 
-
-			sys.exit()
-
-
-
-		else:
-
-			print "\033[1;32mMaaf Masukkan password Anda salah... [?]\033[00m"
-
-			print "Silahkan segera log-in kembali...!!\n"
-
-			restart()
-
-
-
-	else:
-
-		print "\033[1;32mMaaf Masukkan Username Anda salah... [?]\033[00m"
-
-		print "Silahkan segera log-in kembali...!!\n"
-
-		restart()
-
-
-
-try:
-
+user = raw_input('ID: ')
+import getpass
+sandi = raw_input('Password: ')
+if sandi == '*#*#*#*#*#' and user == 'marioxploit':
+    print 'Anda Telah Login eaa slur'
+    sys.exit
+else:
+    print 'Login GAGAL, Silahkan hubungi ZX'
+    wa()
+    restart()
 	main()
 
 except KeyboardInterrupt:
