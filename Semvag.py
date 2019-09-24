@@ -1,4 +1,3 @@
-#decompiled by zX
 import os, sys
 print '\x1b[1;32mSudah punya ID dan Password nya?'
 print '\x1b[1;32mSilahkan Login '
